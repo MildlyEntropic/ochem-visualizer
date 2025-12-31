@@ -606,6 +606,113 @@ header p {
     height: 10px !important;
 }
 
+/* Footer */
+.site-footer {
+    margin-top: 40px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    color: #00d9ff;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #8892b0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8892b0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 8px 0;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #00d9ff;
+}
+
+.footer-link svg {
+    flex-shrink: 0;
+}
+
+/* Support Section */
+.support-section {
+    background: rgba(139, 69, 69, 0.2);
+    border: 1px solid rgba(139, 69, 69, 0.4);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 280px;
+}
+
+.coffee-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ff813f;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.coffee-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 129, 63, 0.4);
+}
+
+.coffee-btn svg {
+    flex-shrink: 0;
+}
+
+/* Footer Attribution */
+.footer-attribution {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+.footer-attribution p {
+    color: #6a7a8a;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.footer-attribution a {
+    color: #8892b0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-attribution a:hover {
+    color: #00d9ff;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .viewer-container {
@@ -640,5 +747,18 @@ header p {
 
     header h1 {
         font-size: 1.8rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-section {
+        min-width: unset;
+    }
+
+    .support-section {
+        max-width: 100%;
     }
 }
